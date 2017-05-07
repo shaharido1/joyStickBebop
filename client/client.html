@@ -1,1 +1,67 @@
-<h1>HJ</h1>
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>joystick</title>
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <link rel="stylesheet" href=client.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="all">
+    <div id="container">
+      <span id="attitude"></span>
+      <div id="videoContainer">
+        <div id="video"></div>
+      </div>
+      <div id="buttons">
+        <button type="button" class="btn btn-primary" id="takeoff" style="width:24%">takeoff</button>
+        <button type="button" class="btn btn-primary" id="land"style="width:24%">land</button>
+        <button type="button" class="btn btn-primary" id="revcover"style="width:24%">recover</button>
+        <button type="button" class="btn btn-primary" id="stop"style="width:25%">stop!!</button>
+      </div>
+      <div id="navbutton">
+        <button type="button" class="btn btn-primary" id="up" style="width:24%">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+      </button>
+        <button type="button" class="btn btn-primary" id="down"style="width:24%">
+        <span class="glyphicon glyphicon-arrow-down"></span>
+      </button>
+        <button type="button" class="btn btn-primary" id="left"style="width:24%">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+      </button>
+        <button type="button" class="btn btn-primary" id="right"style="width:25%">
+        <span class="glyphicon glyphicon-arrow-right"></span>
+      </button>
+      </div>
+      <div>
+        <div id="emergency">text</div>
+      </div>
+    </div>
+    <div id="dataTable" class="table-responsive">
+      <table class="table">
+        <tr>
+          <td>gps.lat</td>
+          <td id="lat">123123</td>
+        </tr>
+        <tr>
+          <td>gps.lng</td>
+          <td id="lng">123123</td>
+        </tr>
+        <tr>
+          <td>roll</td>
+          <td id="roll">123123</td>
+        </tr>
+      </table>
+      <div id="commands"></div>
+        <div id="content"></div>
+    </div>
+  </div>
+  <script src="scripts.min.js"></script>
+</body>
+
+</html>

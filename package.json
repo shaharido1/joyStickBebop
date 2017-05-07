@@ -4,11 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run bulid && npm run serve",
+    "serve": "nodemon ./server/server.js",
+    "build": "webpack --config webpack.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2"
+    "ar-drone": "^0.3.3",
+    "atob": "^2.0.3",
+    "broadway-player": "^0.1.1",
+    "dronestream": "^1.1.1",
+    "express": "^4.15.2",
+    "nipplejs": "^0.6.7",
+    "node-bebop": "^0.6.0",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
   }
 }
